@@ -1,0 +1,18 @@
+c:\users\jakub\documents\visual studio 2010\Projects\ForecaWeatherLublin\ForecaWeatherLublin\bin\Debug\ForecaWeatherLublin.exe
+c:\users\jakub\documents\visual studio 2010\Projects\ForecaWeatherLublin\ForecaWeatherLublin\bin\Debug\ForecaWeatherLublin.pdb
+c:\users\jakub\documents\visual studio 2010\Projects\ForecaWeatherLublin\ForecaWeatherLublin\obj\x86\Debug\ResolveAssemblyReference.cache
+c:\users\jakub\documents\visual studio 2010\Projects\ForecaWeatherLublin\ForecaWeatherLublin\obj\x86\Debug\ForecaWeatherLublin.Properties.Resources.resources
+c:\users\jakub\documents\visual studio 2010\Projects\ForecaWeatherLublin\ForecaWeatherLublin\obj\x86\Debug\GenerateResource.read.1.tlog
+c:\users\jakub\documents\visual studio 2010\Projects\ForecaWeatherLublin\ForecaWeatherLublin\obj\x86\Debug\GenerateResource.write.1.tlog
+c:\users\jakub\documents\visual studio 2010\Projects\ForecaWeatherLublin\ForecaWeatherLublin\obj\x86\Debug\ForecaWeatherLublin.exe
+c:\users\jakub\documents\visual studio 2010\Projects\ForecaWeatherLublin\ForecaWeatherLublin\obj\x86\Debug\ForecaWeatherLublin.pdb
+c:\users\jakub\documents\visual studio 2010\Projects\ForecaWeatherLublin\ForecaWeatherLublin\obj\x86\Debug\ForecaWeatherLublin.foPogodaLublin.resources
+C:\Users\kzez1986\Desktop\Do sprawdzenia\Visual Studio 2010\Projects\ForecaWeatherLublin\ForecaWeatherLublin\bin\Debug\ForecaWeatherLublin.exe
+C:\Users\kzez1986\Desktop\Do sprawdzenia\Visual Studio 2010\Projects\ForecaWeatherLublin\ForecaWeatherLublin\bin\Debug\ForecaWeatherLublin.pdb
+C:\Users\kzez1986\Desktop\Do sprawdzenia\Visual Studio 2010\Projects\ForecaWeatherLublin\ForecaWeatherLublin\obj\x86\Debug\ForecaWeatherLublin.csprojAssemblyReference.cache
+C:\Users\kzez1986\Desktop\Do sprawdzenia\Visual Studio 2010\Projects\ForecaWeatherLublin\ForecaWeatherLublin\obj\x86\Debug\ForecaWeatherLublin.foPogodaLublin.resources
+C:\Users\kzez1986\Desktop\Do sprawdzenia\Visual Studio 2010\Projects\ForecaWeatherLublin\ForecaWeatherLublin\obj\x86\Debug\ForecaWeatherLublin.Properties.Resources.resources
+C:\Users\kzez1986\Desktop\Do sprawdzenia\Visual Studio 2010\Projects\ForecaWeatherLublin\ForecaWeatherLublin\obj\x86\Debug\ForecaWeatherLublin.csproj.GenerateResource.cache
+C:\Users\kzez1986\Desktop\Do sprawdzenia\Visual Studio 2010\Projects\ForecaWeatherLublin\ForecaWeatherLublin\obj\x86\Debug\ForecaWeatherLublin.csproj.CoreCompileInputs.cache
+C:\Users\kzez1986\Desktop\Do sprawdzenia\Visual Studio 2010\Projects\ForecaWeatherLublin\ForecaWeatherLublin\obj\x86\Debug\ForecaWeatherLublin.exe
+C:\Users\kzez1986\Desktop\Do sprawdzenia\Visual Studio 2010\Projects\ForecaWeatherLublin\ForecaWeatherLublin\obj\x86\Debug\ForecaWeatherLublin.pdb

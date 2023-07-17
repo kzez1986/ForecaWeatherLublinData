@@ -1,0 +1,256 @@
+10 day forecast - Lublin, PL - Foreca.comwindow.googletag = window.googletag || {cmd: []};
+            window.fcaInit = []; window.onFcaInit = function(callback) { window.fcaInit.push(callback); };
+            window.scriptInit = []; window.onScriptLoaded = function(callback) { window.scriptInit.push(callback); };
+                        window.multiLingual = true;
+            window.fcaLanguage = "en";
+            window.fcai18n = {"symbols":{"100":"Mostly clear","110":"Mostly clear, slight possibility of rain","111":"Mostly clear, slight possibility of wet snow","112":"Mostly clear, slight possibility of snow","120":"Mostly clear, slight possibility of rain","121":"Mostly clear, slight possibility of wet snow","122":"Mostly clear, slight possibility of snow","130":"Mostly clear, slight possibility of rain","131":"Mostly clear, slight possibility of wet snow","132":"Mostly clear, slight possibility of snow","140":"Mostly clear, possible thunderstorms with rain","141":"Mostly clear, possible thunderstorms with wet snow","142":"Mostly clear, possible thunderstorms with snow","200":"Partly cloudy","210":"Partly cloudy and light rain","211":"Partly cloudy and light wet snow","212":"Partly cloudy and light snow","220":"Partly cloudy and showers","221":"Partly cloudy and wet snow showers","222":"Partly cloudy and snow showers","230":"Partly cloudy and rain","231":"Partly cloudy and wet snow\n","232":"Partly cloudy and snow","240":"Partly cloudy, possible thunderstorms with rain","241":"Partly cloudy, possible thunderstorms with wet snow","242":"Partly cloudy, possible thunderstorms with snow","300":"Cloudy","310":"Cloudy and light rain","311":"Cloudy and light wet snow","312":"Cloudy and light snow","320":"Cloudy and showers","321":"Cloudy and wet snow showers","322":"Cloudy and snow showers","330":"Cloudy and rain","331":"Cloudy and wet snow","332":"Cloudy and snow","340":"Cloudy, thunderstorms with rain","341":"Cloudy, thunderstorms with wet snow","342":"Cloudy, thunderstorms with snow","400":"Overcast","410":"Overcast and light rain","411":"Overcast and light wet snow","412":"Overcast and light snow","420":"Overcast and showers","421":"Overcast and wet snow showers","422":"Overcast and snow showers","430":"Overcast and rain","431":"Overcast and wet snow","432":"Overcast and snow","440":"Overcast, thunderstorms with rain","441":"Overcast, thunderstorms with wet snow","442":"Overcast, thunderstorms with snow","500":"Thin upper cloud","600":"Fog","000":"Clear"}};
+            window.fcaSettings = {"units":{"temp":"C","wind":"kmh","rain":"mm","pres":"hPa","vis":"km"},"time":"24h","theme":"default","language":"en"};
+
+            try {
+                var savedSettings = localStorage.getItem('fcaSettings')
+                if(savedSettings) {
+                    var newSettings = JSON.parse(savedSettings);
+                    newSettings.language = 'en'; 
+                    window.fcaSettings = newSettings;
+                }
+
+                                if(window.fcaSettings.theme === 'default') {
+                    if(window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches) {
+                        window.fcaSettings.theme = 'dark';
+                    } else {
+                        window.fcaSettings.theme = 'light';
+                    }
+                }
+            } catch(err) {}window.dataLayer = window.dataLayer || [];
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        function startAnalytics() {
+            gtag('js', new Date());
+            gtag('config', 'G-6WHT7244JQ', { anonymize_ip: true });
+        }var desktop = '6421a5792ce7cbeaf8f49a47';
+                var mobile = '6421a5894d04faa0ebf49a48';
+                var cid;
+                    if(window.innerWidth = 972){ 
+                        cid = desktop;
+                    } else {
+                        cid = mobile;
+                }
+                
+                function loadAds(noSlotReload) {
+                    window.relevantDigital = window.relevantDigital || {};
+                    relevantDigital.cmd = relevantDigital.cmd || [];
+                    relevantDigital.cmd.push(function () {
+                        // relevantDigital.addPrebidConfig({ consentManagement: { cmpApi: 'none'}}); // Disable CMP requirement JUST for this test-page - REMOVE BEFORE LIVE!!!
+                        relevantDigital.loadPrebid({
+                            configId: cid,
+                            delayedAdserverLoading: true,
+                            manageAdserver: true,
+                            noGpt: true,
+                            collapseEmptyDivs: true,
+                            collapseBeforeAdFetch: false,
+                            allowedDivIds: null, // set to an array to only load certain s, example - ["divId1", "divId2"]
+                            noSlotReload: false, // set true to only load ad slots that have never been loaded 
+                        });
+                    });
+                }(function() {
+  var host = 'www.foreca.com';
+  var element = document.createElement('script');
+  var firstScript = document.getElementsByTagName('script')[0];
+  var url = 'https://cmp.quantcast.com'
+    .concat('/choice/', '_PEuXmMRrGVDN', '/', host, '/choice.js');
+  var uspTries = 0;
+  var uspTriesLimit = 3;
+  element.async = true;
+  element.type = 'text/javascript';
+  element.src = url;
+
+  firstScript.parentNode.insertBefore(element, firstScript);
+
+  function makeStub() {
+    var TCF_LOCATOR_NAME = '__tcfapiLocator';
+    var queue = [];
+    var win = window;
+    var cmpFrame;
+
+    function addFrame() {
+      var doc = win.document;
+      var otherCMP = !!(win.frames[TCF_LOCATOR_NAME]);
+
+      if (!otherCMP) {
+        if (doc.body) {
+          var iframe = doc.createElement('iframe');
+
+          iframe.style.cssText = 'display:none';
+          iframe.name = TCF_LOCATOR_NAME;
+          doc.body.appendChild(iframe);
+        } else {
+          setTimeout(addFrame, 5);
+        }
+      }
+      return !otherCMP;
+    }
+
+    function tcfAPIHandler() {
+      var gdprApplies;
+      var args = arguments;
+
+      if (!args.length) {
+        return queue;
+      } else if (args[0] === 'setGdprApplies') {
+        if (
+          args.length  3 &&
+          args[2] === 2 &&
+          typeof args[3] === 'boolean'
+        ) {
+          gdprApplies = args[3];
+          if (typeof args[2] === 'function') {
+            args[2]('set', true);
+          }
+        }
+      } else if (args[0] === 'ping') {
+        var retr = {
+          gdprApplies: gdprApplies,
+          cmpLoaded: false,
+          cmpStatus: 'stub'
+        };
+
+        if (typeof args[2] === 'function') {
+          args[2](retr);
+        }
+      } else {
+        if(args[0] === 'init' && typeof args[3] === 'object') {
+          args[3] = { ...args[3], tag_version: 'V2' };
+        }
+        queue.push(args);
+      }
+    }
+
+    function postMessageEventHandler(event) {
+      var msgIsString = typeof event.data === 'string';
+      var json = {};
+
+      try {
+        if (msgIsString) {
+          json = JSON.parse(event.data);
+        } else {
+          json = event.data;
+        }
+      } catch (ignore) {}
+
+      var payload = json.__tcfapiCall;
+
+      if (payload) {
+        window.__tcfapi(
+          payload.command,
+          payload.version,
+          function(retValue, success) {
+            var returnMsg = {
+              __tcfapiReturn: {
+                returnValue: retValue,
+                success: success,
+                callId: payload.callId
+              }
+            };
+            if (msgIsString) {
+              returnMsg = JSON.stringify(returnMsg);
+            }
+            if (event && event.source && event.source.postMessage) {
+              event.source.postMessage(returnMsg, '*');
+            }
+          },
+          payload.parameter
+        );
+      }
+    }
+
+    while (win) {
+      try {
+        if (win.frames[TCF_LOCATOR_NAME]) {
+          cmpFrame = win;
+          break;
+        }
+      } catch (ignore) {}
+
+      if (win === window.top) {
+        break;
+      }
+      win = win.parent;
+    }
+    if (!cmpFrame) {
+      addFrame();
+      win.__tcfapi = tcfAPIHandler;
+      win.addEventListener('message', postMessageEventHandler, false);
+    }
+  };
+
+  makeStub();
+
+  var uspStubFunction = function() {
+    var arg = arguments;
+    if (typeof window.__uspapi !== uspStubFunction) {
+      setTimeout(function() {
+        if (typeof window.__uspapi !== 'undefined') {
+          window.__uspapi.apply(window.__uspapi, arg);
+        }
+      }, 500);
+    }
+  };
+
+  var checkIfUspIsReady = function() {
+    uspTries++;
+    if (window.__uspapi === uspStubFunction && uspTries Send feedback Link copied const share = document.querySelector('button.showShare');
+        if(navigator.userAgent && navigator.userAgent.match(/(Mac |i)OS/)) {
+            share.className += ' visible ios';
+        } else {
+            share.className += ' visible common';
+        }TodayHourly10 dayWeekRadarMore &#9660;Forecasts Weather today Hourly Weather for the week 10 day forecast 15 day forecastWeather Maps Weather radar Precipitation Temperature Wind Symbol map Cloudiness Satellite and Clouds Air Pressure UV IndexSevere Weather Weather Warnings Hurricane Air Quality Earthquakes Severe WeatherObservations Observation History English (Intl)English (US)българскиČeštinaDanskDeutschEestiΕλληνικάEspañolزبان فارسیFrançaisHrvatskiItalianoLatviešuMagyarNederlandsPolskiPortuguêsRomâneşteРусскийSlovenčinaSuomiSvenskaTürkçeУкраїнськаLublinPoland SettingsUnits F&deg;  C&deg;Time 12h  24hThemeMore settings &#9660;Less settings &#9650;Precipitation in  mmWind speed mph  kmh  m/s  BftVisibility mi  kmPressure inHg  mmHg  hPaForecasts Weather today Hourly Weather for the week 10 day forecast 15 day forecastWeather Maps Weather radar Precipitation Temperature Symbol map Cloudiness Satellite and Clouds Air Pressure UV IndexSevere Weather Weather Warnings Hurricane Air Quality Earthquakes Severe WeatherObservations Observation HistoryLublin 10 day forecastMon7/17 17/07Max82&deg; +28&deg;Min64&deg; +18&deg;4 mph 2 m/s 7 kmh 2 Bft 0.43 in 10.9 mmTue7/18 18/07Max72&deg; +22&deg;Min59&deg; +15&deg;9 mph 4 m/s 14 kmh 3 Bft &lt; 0,01 in &lt; 0,1 mmWed7/19 19/07Max75&deg; +24&deg;Min54&deg; +12&deg;4 mph 2 m/s 7 kmh 2 Bft 0 in 0 mmThu7/20 20/07Max72&deg; +22&deg;Min54&deg; +12&deg;7 mph 3 m/s 11 kmh 2 Bft 0.05 in 1.2 mmFri7/21 21/07Max72&deg; +22&deg;Min50&deg; +10&deg;4 mph 2 m/s 7 kmh 2 Bft 0.04 in 0.9 mmSat7/22 22/07Max73&deg; +23&deg;Min57&deg; +14&deg;4 mph 2 m/s 7 kmh 2 Bft 0.14 in 3.7 mmSun7/23 23/07Max72&deg; +22&deg;Min59&deg; +15&deg;7 mph 3 m/s 11 kmh 2 Bft &lt; 0,01 in &lt; 0,1 mmMon7/24 24/07Max75&deg; +24&deg;Min61&deg; +16&deg;7 mph 3 m/s 11 kmh 2 Bft 0 in 0 mmTue7/25 25/07Max86&deg; +30&deg;Min64&deg; +18&deg;9 mph 4 m/s 14 kmh 3 Bft 0.09 in 2.3 mmWed7/26 26/07Max79&deg; +26&deg;Min64&deg; +18&deg;7 mph 3 m/s 11 kmh 2 Bft &lt; 0,01 in &lt; 0,1 mmDaily weather symbolThe daily weather symbol gives an overview of the weather between 7 a.m. and 6 p.m. The weather in the evening or night time do not show on the symbol. The amount of rain drops on the daily weather symbol represent the total precipitation amount of that day. The rain can be light rain that falls for a longer time period, or a heavy rain of short duration. You can see the more precise timing and intensity of the rain in the hourly forecast. The cloudiness on the daily weather symbol is calculated as a weighted average of the predicted cloudiness of that day, with most weight assigned to the afternoon hours.Daily temperatures, wind information and total precipitationUnlike the daily weather symbol, the temperatures, wind information and total precipitation take into account the whole 24-hour day. The wind forecast shows the strongest expected 10-minute average wind speed of the day. Please note that especially in inland locations wind gusts can be up to 1,5 to 2,5 times stronger than the 10-minute average wind speed. The total precipitation forecast gives the expected total precipitation for the whole 24-hour day. The total snowfall refers to the snowfall from the cloud and does not take into account local melting, packing or drifting of snow. These factors cause the amount of snow on the ground to grow less than the snowfall amount. Temperatures also affect how much a given amount of snowfall grows the amount of snow on the ground. If the water content of the rain is kept constant, the colder the weather, the thicker a layer the falling snow forms on the ground.For example in temperatures just above freezing, snowfall with the content of a quarter of an inch of water forms a 2,5 inches thick layer of snow on the ground, but in temperatures around -5 degrees Fahrenheit the same amount of water forms a layer of snow 5 inches thick. For example in temperatures just above freezing, snowfall with the water content of 10 millimetres of water forms a snow layer 10 centimetres thick on the ground, but in temperatures around -20 degrees Celsius the layer formed by same amount of water is 20 centimetres thick.The total precipitation is given in inches. If the precipitation falls as water or sleet, the total precipitation is given in millimetres. In the case of snowfall, the total precipitation is given in centimetres.Last visitedNearest ObservationsLublin Radawiec +20&deg; 68&deg;Overcast and showers 2 m/s 4 mph 7 kmh 2 BftDewpoint 18&deg; 64&deg;Rel. hum. 92 %Feels like +20&deg; 68&deg;Pressure 1016 hPa 30 inHg 762 mmHgVisibility 25000 m 16 mi21:00 9:00 PMWlodawa +22&deg; 71&deg;Overcast 4 m/s 9 mph 14 kmh 3 BftDewpoint 20&deg; 68&deg;Rel. hum. 91 %Feels like +21&deg; 70&deg;Pressure 1016 hPa 30 inHg 761.8 mmHgVisibility 20000 m 12 mi21:00 9:00 PMZamosc +21&deg; 69&deg;Overcast, thunderstorms with rain 3 m/s 7 mph 11 kmh 2 BftDewpoint 18&deg; 64&deg;Rel. hum. 90 %Feels like +20&deg; 68&deg;Pressure 1017 hPa 30 inHg 763.1 mmHgVisibility 10000 m 6 mi21:00 9:00 PMNearest observations show current weather observations from your nearest weather stations.Your favoritesSend Feedback function showConsentSettings() {
+        if (window.__tcfapi) {
+            window.__tcfapi('displayConsentUi', 2, () = {})
+        }
+    }ForecaContactSend FeedbackData SourcesPrivacy PolicyTerms &amp; ConditionsPrivacy SettingsServicesWeather APIProducts for MediaWeather App
+//
+
+
+&copy; Foreca Ltd 2023 Today Hourly 10 day Week Radargoogletag.cmd.push(function() {
+                            googletag.pubads().addEventListener('slotRenderEnded', (event) = {
+                                if(!event.slot.getSlotElementId().match(/foreca_com-footer_d/)) {
+                                    return
+                                }
+
+                                const wrap = document.querySelector('.ad-footer-wrap')
+                                if(!wrap) {
+                                    return
+                                }
+
+                                if(event.isEmpty) {
+                                    wrap.parentNode.removeChild(wrap)
+                                } else {
+                                    wrap.style.opacity = 1
+                                }                            
+                            })
+                        });googletag.cmd.push(function() {
+                    var interstitialSlot
+
+                    if(window.matchMedia('(max-width: 32.5rem)').matches) {
+                        interstitialSlot = googletag.defineOutOfPageSlot('/3377764,2486851/foreca/foreca_com-interstitial_m', googletag.enums.OutOfPageFormat.INTERSTITIAL)
+                    } else {
+                        interstitialSlot = googletag.defineOutOfPageSlot('/3377764,2486851/foreca/foreca_com-interstitial_d', googletag.enums.OutOfPageFormat.INTERSTITIAL)
+                    }
+                                        
+                    if (interstitialSlot) {
+                        interstitialSlot.addService(googletag.pubads());
+                    }
+                });window.translations = {
+            'use_my_location': "Use My Location"
+        };
+        onFcaInit(() = {
+                        window.addRecent({"id":"100765876","numeric_id":765876,"lon":22.5667,"lat":51.25,"elevation":183,"type":"P.PPLA","adm1_id":"pl.75","adm2_id":"pl.75.0663","adm3_id":"pl.75.0663.066301","population":360044,"continentId":"EUR","countryId":"pl","timezone":"Europe/Warsaw","preference":3512,"use_navi":false,"warningSources":{"hurricanes":null},"name":"Lublin","countryName":"Poland","defaultName":"Lublin","defaultCountryName":"Poland","nearbySkiCenters":[{"id":"211003544","numeric_id":3544,"lon":21.5409,"lat":51.0179,"elevation":0,"type":"SPORT.SKI","adm1_id":null,"adm2_id":null,"adm3_id":null,"population":null,"continentId":"EUR","countryId":"pl","timezone":"Europe/Warsaw","preference":20000,"use_navi":true,"warningSources":{"hurricanes":null},"name":"Bałtów - Szwajcaria Bałtowska","countryName":"Poland","defaultName":"Bałtów - Szwajcaria Bałtowska","defaultCountryName":"Poland"}],"path":"100765876/Lublin-Poland","hasRadar":true,"displayName":"Lublin"});
+                        window.getRecentData({language: 'en'});
+            window.getFavoriteData({
+                location: {"id":"100765876","numeric_id":765876,"lon":22.5667,"lat":51.25,"elevation":183,"type":"P.PPLA","adm1_id":"pl.75","adm2_id":"pl.75.0663","adm3_id":"pl.75.0663.066301","population":360044,"continentId":"EUR","countryId":"pl","timezone":"Europe/Warsaw","preference":3512,"use_navi":false,"warningSources":{"hurricanes":null},"name":"Lublin","countryName":"Poland","defaultName":"Lublin","defaultCountryName":"Poland","nearbySkiCenters":[{"id":"211003544","numeric_id":3544,"lon":21.5409,"lat":51.0179,"elevation":0,"type":"SPORT.SKI","adm1_id":null,"adm2_id":null,"adm3_id":null,"population":null,"continentId":"EUR","countryId":"pl","timezone":"Europe/Warsaw","preference":20000,"use_navi":true,"warningSources":{"hurricanes":null},"name":"Bałtów - Szwajcaria Bałtowska","countryName":"Poland","defaultName":"Bałtów - Szwajcaria Bałtowska","defaultCountryName":"Poland"}],"path":"100765876/Lublin-Poland","hasRadar":true,"displayName":"Lublin"},
+                basePath: '',
+                addText: 'Would you like to add {{name}} to your favorites for quick access?',
+                addButtonText: 'Add'
+            });
+        })

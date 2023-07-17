@@ -305,7 +305,6 @@ namespace ForecaWeatherLublin
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            MessageBox.Show("Timer");
             GetData();
         }
 

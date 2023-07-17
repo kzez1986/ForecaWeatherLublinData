@@ -16,3 +16,12 @@ C:\Users\kzez1986\Desktop\Do sprawdzenia\Visual Studio 2010\Projects\ForecaWeath
 C:\Users\kzez1986\Desktop\Do sprawdzenia\Visual Studio 2010\Projects\ForecaWeatherLublin\ForecaWeatherLublin\obj\x86\Debug\ForecaWeatherLublin.csproj.CoreCompileInputs.cache
 C:\Users\kzez1986\Desktop\Do sprawdzenia\Visual Studio 2010\Projects\ForecaWeatherLublin\ForecaWeatherLublin\obj\x86\Debug\ForecaWeatherLublin.exe
 C:\Users\kzez1986\Desktop\Do sprawdzenia\Visual Studio 2010\Projects\ForecaWeatherLublin\ForecaWeatherLublin\obj\x86\Debug\ForecaWeatherLublin.pdb
+C:\Users\kzez1986\Desktop\Projekty do gita\ForecaWeatherLublin\ForecaWeatherLublin\bin\Debug\ForecaWeatherLublin.exe
+C:\Users\kzez1986\Desktop\Projekty do gita\ForecaWeatherLublin\ForecaWeatherLublin\bin\Debug\ForecaWeatherLublin.pdb
+C:\Users\kzez1986\Desktop\Projekty do gita\ForecaWeatherLublin\ForecaWeatherLublin\obj\x86\Debug\ForecaWeatherLublin.csprojAssemblyReference.cache
+C:\Users\kzez1986\Desktop\Projekty do gita\ForecaWeatherLublin\ForecaWeatherLublin\obj\x86\Debug\ForecaWeatherLublin.foPogodaLublin.resources
+C:\Users\kzez1986\Desktop\Projekty do gita\ForecaWeatherLublin\ForecaWeatherLublin\obj\x86\Debug\ForecaWeatherLublin.Properties.Resources.resources
+C:\Users\kzez1986\Desktop\Projekty do gita\ForecaWeatherLublin\ForecaWeatherLublin\obj\x86\Debug\ForecaWeatherLublin.csproj.GenerateResource.cache
+C:\Users\kzez1986\Desktop\Projekty do gita\ForecaWeatherLublin\ForecaWeatherLublin\obj\x86\Debug\ForecaWeatherLublin.csproj.CoreCompileInputs.cache
+C:\Users\kzez1986\Desktop\Projekty do gita\ForecaWeatherLublin\ForecaWeatherLublin\obj\x86\Debug\ForecaWeatherLublin.exe
+C:\Users\kzez1986\Desktop\Projekty do gita\ForecaWeatherLublin\ForecaWeatherLublin\obj\x86\Debug\ForecaWeatherLublin.pdb

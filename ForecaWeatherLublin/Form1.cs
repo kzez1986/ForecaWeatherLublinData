@@ -240,13 +240,15 @@ namespace ForecaWeatherLublin
             do
             {
                 s = ten.ReadLine();
-                indeks = s.IndexOf("WeatherObservations Observation HistoryLublin 10 day forecast");
+                indeks = s.IndexOf("WeatherObservations Observation History");
             }
             while (indeks == -1);
 
             ten.Close();
 
-            indeks += 61; //Ustawiamy się na 1 dniu prognozy
+            indeks = s.IndexOf("Lublin 10 day forecast");
+            
+            indeks += 22; //Ustawiamy się na 1 dniu prognozy
             s = s.Substring(indeks);
 
             for (int i = 0; i < 10; i++)

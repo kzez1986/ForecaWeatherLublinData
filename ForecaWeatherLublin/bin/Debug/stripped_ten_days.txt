@@ -21,7 +21,14 @@
                         window.fcaSettings.theme = 'light';
                     }
                 }
-            } catch(err) {}window.dataLayer = window.dataLayer || [];
+            } catch(err) {}
+
+             if('ResizeObserver' in window === false) {
+               var s = document.createElement('script');
+               s.async = false;
+               s.src = '/public/bundle/modern/polyfill.bundle.fc0d737372d823cf02d9.js';
+               document.head.appendChild(s);
+             }window.dataLayer = window.dataLayer || [];
         function gtag() {
             dataLayer.push(arguments);
         }
@@ -29,20 +36,19 @@
             gtag('js', new Date());
             gtag('config', 'G-6WHT7244JQ', { anonymize_ip: true });
         }var desktop = '6421a5792ce7cbeaf8f49a47';
-                var mobile = '6421a5894d04faa0ebf49a48';
+                var mobile  = '6421a5894d04faa0ebf49a48';
                 var cid;
                     if(window.innerWidth = 972){ 
                         cid = desktop;
                     } else {
                         cid = mobile;
                 }
-                
+                                
                 function loadAds(noSlotReload) {
                     window.relevantDigital = window.relevantDigital || {};
                     relevantDigital.cmd = relevantDigital.cmd || [];
                     relevantDigital.cmd.push(function () {
-                        // relevantDigital.addPrebidConfig({ consentManagement: { cmpApi: 'none'}}); // Disable CMP requirement JUST for this test-page - REMOVE BEFORE LIVE!!!
-                        relevantDigital.loadPrebid({
+                                                relevantDigital.loadPrebid({
                             configId: cid,
                             delayedAdserverLoading: true,
                             manageAdserver: true,
@@ -57,8 +63,8 @@
   var host = 'www.foreca.com';
   var element = document.createElement('script');
   var firstScript = document.getElementsByTagName('script')[0];
-  var url = 'https://cmp.quantcast.com'
-    .concat('/choice/', '_PEuXmMRrGVDN', '/', host, '/choice.js');
+  var url = 'https://cmp.inmobi.com'
+    .concat('/choice/', '_PEuXmMRrGVDN', '/', host, '/choice.js?tag_version=V3');
   var uspTries = 0;
   var uspTriesLimit = 3;
   element.async = true;
@@ -120,7 +126,7 @@
         }
       } else {
         if(args[0] === 'init' && typeof args[3] === 'object') {
-          args[3] = { ...args[3], tag_version: 'V2' };
+          args[3] = Object.assign(args[3], { tag_version: 'V3' });
         }
         queue.push(args);
       }
@@ -199,49 +205,46 @@
 
   var checkIfUspIsReady = function() {
     uspTries++;
-    if (window.__uspapi === uspStubFunction && uspTries Send feedback Link copied const share = document.querySelector('button.showShare');
+    if (window.__uspapi === uspStubFunction && uspTries  Send feedback Link copied const share = document.querySelector('button.showShare');
         if(navigator.userAgent && navigator.userAgent.match(/(Mac |i)OS/)) {
             share.className += ' visible ios';
         } else {
             share.className += ' visible common';
-        }TodayHourly10 dayWeekRadarMore &#9660;Forecasts Weather today Hourly Weather for the week 10 day forecast 15 day forecastWeather Maps Weather radar Precipitation Temperature Wind Symbol map Cloudiness Satellite and Clouds Air Pressure UV IndexSevere Weather Weather Warnings Hurricane Air Quality Earthquakes Severe WeatherObservations Observation History English (Intl)English (US)българскиČeštinaDanskDeutschEestiΕλληνικάEspañolزبان فارسیFrançaisHrvatskiItalianoLatviešuMagyarNederlandsPolskiPortuguêsRomâneşteРусскийSlovenčinaSuomiSvenskaTürkçeУкраїнськаLublinPoland SettingsUnits F&deg;  C&deg;Time 12h  24hThemeMore settings &#9660;Less settings &#9650;Precipitation in  mmWind speed mph  kmh  m/s  BftVisibility mi  kmPressure inHg  mmHg  hPaForecasts Weather today Hourly Weather for the week 10 day forecast 15 day forecastWeather Maps Weather radar Precipitation Temperature Symbol map Cloudiness Satellite and Clouds Air Pressure UV IndexSevere Weather Weather Warnings Hurricane Air Quality Earthquakes Severe WeatherObservations Observation History 1 active weather warning Lublin 10 day forecastTue7/25 25/07Max77&deg; +25&deg;Min61&deg; +16&deg;7 mph 3 m/s 11 kmh 2 Bft 0.62 in 15.9 mmWed7/26 26/07Max68&deg; +20&deg;Min54&deg; +12&deg;7 mph 3 m/s 11 kmh 2 Bft 0.58 in 14.8 mmThu7/27 27/07Max64&deg; +18&deg;Min52&deg; +11&deg;9 mph 4 m/s 14 kmh 3 Bft 0.20 in 5.1 mmFri7/28 28/07Max68&deg; +20&deg;Min50&deg; +10&deg;7 mph 3 m/s 11 kmh 2 Bft 0 in 0 mmSat7/29 29/07Max73&deg; +23&deg;Min57&deg; +14&deg;7 mph 3 m/s 11 kmh 2 Bft 0.03 in 0.7 mmSun7/30 30/07Max73&deg; +23&deg;Min57&deg; +14&deg;4 mph 2 m/s 7 kmh 2 Bft 0.04 in 1.1 mmMon7/31 31/07Max70&deg; +21&deg;Min55&deg; +13&deg;4 mph 2 m/s 7 kmh 2 Bft 0.10 in 2.6 mmTue8/1 01/08Max73&deg; +23&deg;Min55&deg; +13&deg;9 mph 4 m/s 14 kmh 3 Bft 0.03 in 0.7 mmWed8/2 02/08Max68&deg; +20&deg;Min61&deg; +16&deg;11 mph 5 m/s 18 kmh 3 Bft 0.23 in 5.9 mmThu8/3 03/08Max68&deg; +20&deg;Min54&deg; +12&deg;13 mph 6 m/s 22 kmh 4 Bft 0.07 in 1.8 mmDaily weather symbolThe daily weather symbol gives an overview of the weather between 7 a.m. and 6 p.m. The weather in the evening or night time do not show on the symbol. The amount of rain drops on the daily weather symbol represent the total precipitation amount of that day. The rain can be light rain that falls for a longer time period, or a heavy rain of short duration. You can see the more precise timing and intensity of the rain in the hourly forecast. The cloudiness on the daily weather symbol is calculated as a weighted average of the predicted cloudiness of that day, with most weight assigned to the afternoon hours.Daily temperatures, wind information and total precipitationUnlike the daily weather symbol, the temperatures, wind information and total precipitation take into account the whole 24-hour day. The wind forecast shows the strongest expected 10-minute average wind speed of the day. Please note that especially in inland locations wind gusts can be up to 1,5 to 2,5 times stronger than the 10-minute average wind speed. The total precipitation forecast gives the expected total precipitation for the whole 24-hour day. The total snowfall refers to the snowfall from the cloud and does not take into account local melting, packing or drifting of snow. These factors cause the amount of snow on the ground to grow less than the snowfall amount. Temperatures also affect how much a given amount of snowfall grows the amount of snow on the ground. If the water content of the rain is kept constant, the colder the weather, the thicker a layer the falling snow forms on the ground.For example in temperatures just above freezing, snowfall with the content of a quarter of an inch of water forms a 2,5 inches thick layer of snow on the ground, but in temperatures around -5 degrees Fahrenheit the same amount of water forms a layer of snow 5 inches thick. For example in temperatures just above freezing, snowfall with the water content of 10 millimetres of water forms a snow layer 10 centimetres thick on the ground, but in temperatures around -20 degrees Celsius the layer formed by same amount of water is 20 centimetres thick.The total precipitation is given in inches. If the precipitation falls as water or sleet, the total precipitation is given in millimetres. In the case of snowfall, the total precipitation is given in centimetres.Last visitedNearest ObservationsLublin Radawiec +23&deg; 74&deg;Overcast and showers 1 m/s 2 mph 4 kmh 1 BftDewpoint 16&deg; 61&deg;Rel. hum. 66 %Feels like +23&deg; 73&deg;Pressure 1001 hPa 29.5 inHg 750.4 mmHgVisibility 17000 m 11 mi18:00 6:00 PMWlodawa +26&deg; 78&deg;Overcast 2 m/s 4 mph 7 kmh 2 BftDewpoint 15&deg; 59&deg;Rel. hum. 51 %Feels like +25&deg; 77&deg;Pressure 1000 hPa 29.5 inHg 750.1 mmHgVisibility 20000 m 12 mi18:00 6:00 PMZamosc +24&deg; 75&deg;Overcast and showers 1 m/s 2 mph 4 kmh 1 BftDewpoint 18&deg; 64&deg;Rel. hum. 71 %Feels like +23&deg; 73&deg;Pressure 1001 hPa 29.5 inHg 750.4 mmHgVisibility 19000 m 12 mi18:00 6:00 PMNearest observations show current weather observations from your nearest weather stations.Your favoritesSend Feedback function showConsentSettings() {
-        if (window.__tcfapi) {
-            window.__tcfapi('displayConsentUi', 2, () = {})
+        }TodayHourly10 dayWeekRadarMore &#9660;Forecasts Weather today Hourly Weather for the week 10 day forecast 15 day forecastWeather Maps Weather radar Precipitation Temperature Wind Symbol map Cloudiness Satellite and Clouds Air Pressure Snow Depth UV IndexSevere Weather Weather Warnings Hurricane Air Quality Earthquakes Severe WeatherObservations Observation History English (Intl)English (US)българскиČeštinaDanskDeutschEestiΕλληνικάEspañolزبان فارسیFrançaisHrvatskiItalianoLatviešuMagyarNederlandsPolskiPortuguêsRomâneşteРусскийSlovenčinaSuomiSvenskaTürkçeУкраїнськаLublinPoland SettingsUnits F&deg;  C&deg;Time 12h  24hThemeMore settings &#9660;Less settings &#9650;Precipitation in  mmWind speed mph  kmh  m/s  BftVisibility mi  kmPressure inHg  mmHg  hPaForecasts Weather today Hourly Weather for the week 10 day forecast 15 day forecastWeather Maps Weather radar Precipitation Temperature Symbol map Cloudiness Satellite and Clouds Air Pressure UV IndexSevere Weather Weather Warnings Hurricane Air Quality Earthquakes Severe WeatherObservations Observation HistoryLublin 10 day forecastTue4/9 09/04Max77&deg; +25&deg;Min61&deg; +16&deg;4 mph 2 m/s 7 kmh 2 Bft 0 in 0 mmWed4/10 10/04Max63&deg; +17&deg;Min54&deg; +12&deg;7 mph 3 m/s 11 kmh 2 Bft &lt; 0,01 in &lt; 0,1 mmThu4/11 11/04Max63&deg; +17&deg;Min46&deg; +8&deg;4 mph 2 m/s 7 kmh 2 Bft 0 in 0 mmFri4/12 12/04Max63&deg; +17&deg;Min46&deg; +8&deg;7 mph 3 m/s 11 kmh 2 Bft &lt; 0,01 in &lt; 0,1 mmSat4/13 13/04Max63&deg; +17&deg;Min50&deg; +10&deg;7 mph 3 m/s 11 kmh 2 Bft 0.18 in 4.6 mmSun4/14 14/04Max61&deg; +16&deg;Min46&deg; +8&deg;9 mph 4 m/s 14 kmh 3 Bft &lt; 0,01 in &lt; 0,1 mmMon4/15 15/04Max64&deg; +18&deg;Min43&deg; +6&deg;7 mph 3 m/s 11 kmh 2 Bft 0.39 in 9.9 mmTue4/16 16/04Max59&deg; +15&deg;Min45&deg; +7&deg;9 mph 4 m/s 14 kmh 3 Bft 0.05 in 1.2 mmWed4/17 17/04Max50&deg; +10&deg;Min37&deg; +3&deg;7 mph 3 m/s 11 kmh 2 Bft &lt; 0,01 in &lt; 0,1 mmThu4/18 18/04Max52&deg; +11&deg;Min37&deg; +3&deg;7 mph 3 m/s 11 kmh 2 Bft 0.03 in 0.8 mmDaily weather symbolThe daily weather symbol gives an overview of the weather between 7 a.m. and 6 p.m. The weather in the evening or night time do not show on the symbol. The amount of rain drops on the daily weather symbol represent the total precipitation amount of that day. The rain can be light rain that falls for a longer time period, or a heavy rain of short duration. You can see the more precise timing and intensity of the rain in the hourly forecast. The cloudiness on the daily weather symbol is calculated as a weighted average of the predicted cloudiness of that day, with most weight assigned to the afternoon hours.Daily temperatures, wind information and total precipitationUnlike the daily weather symbol, the temperatures, wind information and total precipitation take into account the whole 24-hour day. The wind forecast shows the strongest expected 10-minute average wind speed of the day. Please note that especially in inland locations wind gusts can be up to 1,5 to 2,5 times stronger than the 10-minute average wind speed. The total precipitation forecast gives the expected total precipitation for the whole 24-hour day. The total snowfall refers to the snowfall from the cloud and does not take into account local melting, packing or drifting of snow. These factors cause the amount of snow on the ground to grow less than the snowfall amount. Temperatures also affect how much a given amount of snowfall grows the amount of snow on the ground. If the water content of the rain is kept constant, the colder the weather, the thicker a layer the falling snow forms on the ground.For example in temperatures just above freezing, snowfall with the content of a quarter of an inch of water forms a 2,5 inches thick layer of snow on the ground, but in temperatures around -5 degrees Fahrenheit the same amount of water forms a layer of snow 5 inches thick. For example in temperatures just above freezing, snowfall with the water content of 10 millimetres of water forms a snow layer 10 centimetres thick on the ground, but in temperatures around -20 degrees Celsius the layer formed by same amount of water is 20 centimetres thick.The total precipitation is given in inches. If the precipitation falls as water or sleet, the total precipitation is given in millimetres. In the case of snowfall, the total precipitation is given in centimetres.Last visitedNearest ObservationsLublin Radawiec +23&deg; 73&deg;Mostly clear 2 m/s 4 mph 7 kmh 2 BftDewpoint 11&deg; 52&deg;Rel. hum. 47 %Feels like +23&deg; 73&deg;Pressure 1014 hPa 29.9 inHg 760.4 mmHgVisibility 30000 m 19 mi13:00 1:00 PMWlodawa +24&deg; 74&deg;Partly cloudy 4 m/s 9 mph 14 kmh 3 BftDewpoint 9&deg; 48&deg;Rel. hum. 41 %Feels like +24&deg; 75&deg;Pressure 1014 hPa 29.9 inHg 760.7 mmHgVisibility 20000 m 12 mi13:00 1:00 PMZamosc +24&deg; 75&deg;Mostly clear 4 m/s 9 mph 14 kmh 3 BftDewpoint 9&deg; 48&deg;Rel. hum. 39 %Feels like +24&deg; 75&deg;Pressure 1014 hPa 29.9 inHg 760.7 mmHgVisibility 20000 m 12 mi13:00 1:00 PMNearest observations show current weather observations from your nearest weather stations.Your favoritesSend Feedback function showConsentSettings() {
+        if(window.__tcfapi) {
+            window.__tcfapi('displayConsentUi', 2, () = {});
         }
     }ForecaContactSend FeedbackData SourcesPrivacy PolicyTerms &amp; ConditionsPrivacy SettingsServicesWeather APIProducts for MediaWeather App
 //
 
 
-&copy; Foreca Ltd 2023 Today Hourly 10 day Week Radargoogletag.cmd.push(function() {
-                            googletag.pubads().addEventListener('slotRenderEnded', (event) = {
-                                if(!event.slot.getSlotElementId().match(/foreca_com-footer_d/)) {
-                                    return
-                                }
-
-                                const wrap = document.querySelector('.ad-footer-wrap')
-                                if(!wrap) {
-                                    return
-                                }
-
-                                if(event.isEmpty) {
-                                    wrap.parentNode.removeChild(wrap)
-                                } else {
-                                    wrap.style.opacity = 1
-                                }                            
-                            })
-                        });googletag.cmd.push(function() {
-                    var interstitialSlot
-
-                    if(window.matchMedia('(max-width: 32.5rem)').matches) {
-                        interstitialSlot = googletag.defineOutOfPageSlot('/3377764,2486851/foreca/foreca_com-interstitial_m', googletag.enums.OutOfPageFormat.INTERSTITIAL)
-                    } else {
-                        interstitialSlot = googletag.defineOutOfPageSlot('/3377764,2486851/foreca/foreca_com-interstitial_d', googletag.enums.OutOfPageFormat.INTERSTITIAL)
-                    }
-                                        
-                    if (interstitialSlot) {
-                        interstitialSlot.addService(googletag.pubads());
-                    }
-                });window.translations = {
+&copy; Foreca Ltd 2024 Today Hourly 10 day Week Radargoogletag.cmd.push(function() {
+                        googletag.pubads().addEventListener('slotRenderEnded', (event) = {
+                            if(!event.slot.getSlotElementId().match(/foreca_.*-footer_d/)) {
+                                return
+                            }
+                         const wrap = document.querySelector('.ad-footer-wrap')
+                            if(!wrap) {
+                                return
+                            }
+                         if(event.isEmpty) {
+                                wrap.parentNode.removeChild(wrap)
+                            } else {
+                                wrap.style.opacity = 1
+                            }                            
+                        })
+                    });googletag.cmd.push(function() {
+                var interstitialSlot
+                if(window.matchMedia('(max-width: 32.5rem)').matches) {
+                                            interstitialSlot = googletag.defineOutOfPageSlot('/3377764,2486851/foreca/foreca_com-interstitial_m', googletag.enums.OutOfPageFormat.INTERSTITIAL)
+                                    } else {
+                                            interstitialSlot = googletag.defineOutOfPageSlot('/3377764,2486851/foreca/foreca_com-interstitial_d', googletag.enums.OutOfPageFormat.INTERSTITIAL)
+                                    }
+                                    
+                if (interstitialSlot) {
+                    interstitialSlot.addService(googletag.pubads());
+                }
+            });window.translations = {
             'use_my_location': "Use My Location"
         };
         onFcaInit(() = {
